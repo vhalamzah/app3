@@ -4,7 +4,10 @@
          @include('partials._head')
          <body>
           <div id="wrapper">
-            @include('partials._nav')
+            <nav  class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+              @include('partials._nav')
+            </nav>
+            
 
 
 

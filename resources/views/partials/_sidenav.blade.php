@@ -66,17 +66,17 @@
                             <a href="#"><i class="fa fa-wrench fa-fw"></i> Manage Users <span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level collapse" aria-expanded="false" style="height: 0px;">
                                 <li>
-                                    <a href="#">Create  Users</a>
+                                    <a href="{{route('users.create')}}">Create  Users</a>
                                 </li>
                                  <li>
-                                    <a href="#">View  Users</a>
+                                    <a href="{{route('users.index')}}">View  Users</a>
                                 </li>
                                <!-- add another list create new links -->
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
                         <li class="">
-                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> Manage Roles<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> Manage User Roles<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level collapse" aria-expanded="false" style="height: 0px;">
                                 <li>
                                     <a href="#">Create Roles</a>
@@ -106,13 +106,13 @@
                             <!-- /.nav-second-level -->
                         </li>
                         <li class="">
-                            <a href="#"><i class="fa fa-files-o fa-fw"></i> Manage Permissions<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-files-o fa-fw"></i> Manage User Permissions<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level collapse" aria-expanded="false" style="height: 0px;">
                                 <li>
                                     <a href="#">Create Permissions</a>
                                 </li>
                                 <li>
-                                    <a href="#">View Permissions</a>
+                                    <a href="{{route('permissions.index')}}">View Permissions</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
