@@ -109,7 +109,7 @@
                             <a href="#"><i class="fa fa-files-o fa-fw"></i> Manage User Permissions<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level collapse" aria-expanded="false" style="height: 0px;">
                                 <li>
-                                    <a href="#">Create Permissions</a>
+                                    <a href="{{url('management/permissions/create')}}">Create Permissions</a>
                                 </li>
                                 <li>
                                     <a href="{{route('permissions.index')}}">View Permissions</a>
