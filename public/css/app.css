@@ -8903,6 +8903,10 @@ table.dataTable thead .sorting:after {
   margin-top: 20px;
 }
 
+.roleBtn {
+  padding: 40px;
+}
+
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)

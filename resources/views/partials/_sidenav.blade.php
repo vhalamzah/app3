@@ -82,7 +82,7 @@
                                     <a href="#">Create Roles</a>
                                 </li>
                                 <li>
-                                    <a href="#">View Roles</a>
+                                    <a href="{{route('roles.index')}}">View Roles</a>
                                 </li>
                                <!-- <li>
                                     <a href="#">Third Level <span class="fa arrow"></span></a>

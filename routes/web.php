@@ -21,6 +21,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::prefix('management')->group(function(){
 	Route::resource('/users', 'UserController');
-	Route::resource('/permissions', 'PermissionController'); 
-	Route::resource('/roles', 'RoleController');
+	Route::resource('/permissions', 'PermissionController', ['except' => 'destroy']); 
+	Route::resource('/roles', 'RoleController',  ['except' => 'destroy']);
 });
