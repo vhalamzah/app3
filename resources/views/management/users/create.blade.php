@@ -45,6 +45,18 @@
                                         <a href="{{route('users.index')}}" type="submit" class="btn btn-danger">Cancel</a>
                                     </form>
                                 </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                          @foreach($roles as $role)
+                                           <div class="checkbox">
+                          <label>
+                              <input type="checkbox"v-model="rolesSelected" value="{{$role->id}}"> {{$role->display_name}}
+                          </label>
+
+                      </div>
+                      @endforeach
+                                    </div>
+                                </div>
                             
                                 <!-- /.col-lg-6 (nested) -->
 
@@ -69,6 +81,8 @@
       el: '#wrapper',
       data: {
         auto_password: true,
+        rolesSelected: [{!! old('roles') ? old('roles') : '' !!}]
+
         
       }
     });

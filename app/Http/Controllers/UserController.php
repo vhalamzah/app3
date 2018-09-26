@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\User;
 use Session;
 use Hash;
+use App\Role;
 
 class UserController extends Controller
 {
@@ -28,7 +29,8 @@ class UserController extends Controller
      */
     public function create()
     {
-        return view('management.users.create');
+        $roles = Role::all();
+      return view('management.users.create')->withRoles($roles);
     }
 
     /**

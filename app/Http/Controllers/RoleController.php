@@ -16,7 +16,7 @@ class RoleController extends Controller
      */
     public function index()
     {
-        $roles= Role::alL();
+        $roles= Role::all();
         return view('management.roles.index')->withRoles($roles);
     }
 
